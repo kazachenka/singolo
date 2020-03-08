@@ -478,19 +478,19 @@ ol {
   line-height:21px;
 }
 ol li:first-child {
-  list-style-image: url(/assets/location.png);
+  list-style-image: url(assets/location.png);
   margin-left:0px;
   padding-left: 6px;
   
 }
 ol li {
-  list-style-image: url(/assets/phone1.png);
+  list-style-image: url(assets/phone1.png);
   font-size: 12px;
   margin-left: 2px;
   padding-left: 4px;
 }
 ol li:last-child {
-  list-style-image: url(/assets/mail.png);
+  list-style-image: url(assets/mail.png);
   margin-left:3px;
   padding-left: 3px;
   line-height:23px;
