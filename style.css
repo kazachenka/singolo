@@ -56,9 +56,11 @@ header ul {
   margin-right:14px;
   
 }
-
-.li1>a {
+.menu li a.active {
   color: #f06c64;
+}
+.li1>a {
+  color: #fff;
   text-decoration: none;
   padding-right:12px;
 }
@@ -87,32 +89,53 @@ header ul {
   background-color:#f06c64;
 }
 
+.hidden {
+  display: none;
+}
+
 .slider-1 {
   height: 594px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.slider-sec {
+  position: absolute;
 }
 .chev-left{
-  margin-right: 55px;
+  margin-left:40px;
+  margin-top: 282px;
   margin-bottom: 2px;
+  position: absolute;
+
 }
 .chev-right{
-  margin-left: 56px;
+  margin-left: 960px;
+  margin-top: 282px;
   margin-bottom: 2px;
+  position: absolute;
 }
 .img-iphone{
-  margin-right:73px;
-  margin-bottom:6px;
-  margin-left:1px;
+  margin-top: 52px;
+  margin-left:112px;
+  position: absolute;
 }
 .img-iphone2 {
-  margin-bottom:6px;
+  margin-top: 174px;
+  margin-left: 425px;
+  position: absolute;
 }
 .slider-2 {
   background-color: #ea676b;
   height: 6px;
   width:1020px;
+}
+.iphone1 {
+  display: none;
+  height: 333.5px;
+  width: 188.5px;
+  position: absolute;
+  top: 117.5px;
+  left: 125.5px;
+  background-color: #000000;
+  border-radius: 3px;
 }
 
 
@@ -322,6 +345,11 @@ header ul {
   margin-top:17px;
   width:220px;
   height:187px;
+}
+.row-img img.active {
+  border: 3px solid #F06C64;
+  height: 181px;
+  width: 214px;
 }
 .content-wrapper {
   height: 734px;
@@ -547,4 +575,20 @@ textarea:-moz-placeholder {
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color:#f2888b;;
+}
+.message-block {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #f2888b;
+}
+.message-block.hidden {
+  display: none;
+}
+.message {
+  position: fixed;
+  width: 200px;
+  text-align: center;
 }
