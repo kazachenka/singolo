@@ -16,31 +16,37 @@
     <header>
       <section class="header-1">
         <h1>SINGOLO<span>*</span></h1>
-        <ul>
-          <li class="li1 header-li-margin"><a href="#">HOME</a></li>
-          <li class="li2 header-li-margin"><a href="#">SERVICES</a></li>
-          <li class="li2 header-li-margin"><a href="#">PORTFOLIO</a></li>
-          <li class="li2 header-li-margin"><a href="#">ABOUT</a></li>
-          <li class="li3 header-li-margin"><a href="#">CONTACT</a></li>
+        <ul id="menu" class="menu">
+          <li class="li1 header-li-margin" ><a href="#">HOME</a></li>
+          <li class="li2 header-li-margin"><a href="#Services">SERVICES</a></li>
+          <li class="li2 header-li-margin"><a href="#Portfolio">PORTFOLIO</a></li>
+          <li class="li2 header-li-margin"><a href="#About">ABOUT</a></li>
+          <li class="li3 header-li-margin"><a href="#Contact">CONTACT</a></li>
         </ul>
       </section>
       <div class="header-2"></div>
     </header>
     <div class="slider">
-      <section class="slider-1">
-        <a href="#" class="chev-left"><img src="assets/chev-left.png"></a>
+      <section class="slider-1 sl">
+        <a onclick="pSlides(-1)"><img src="assets/chev-left.png" class="chev-left" id="chev-left"></a>
         <img src="assets/iPhone-Vertical.png" alt="iPhone-Vertical" class="img-iphone">
+        <div id="iphone1" class="iphone iphone1"></div>
         <img src="assets/iPhone-Horizontal.png" alt="iPhone-Horizontal" class="img-iphone2">
-        <a href="#" class="chev-right"><img src="assets/chev-right.png"></a>
-
+        <div id="iphone2" class="iphone iphone2"></div>
+       <a onclick="pSlides(1)"><img src="assets/chev-right.png" class="chev-right" id="chev-right"></a>
+      </section>
+      <section id="slider-sec" class="sl slider-second hidden">
+        <a onclick="pSlides(-1)"><img src="assets/chev-left.png" class="chev-left" id="chev-left"></a>
+        <img  class="slider-sec" src="assets/Slide-2.svg" alt="slider 2">
+        <a onclick="pSlides(1)"><img src="assets/chev-right.png" class="chev-right" id="chev-right"></a>
       </section>
       <section class="slider-2">
       </section>
     </div>
     <div class="services-wrapper">
     <div class="services">
-      <section class="services-top">
-        <h1>Our Services</h1>
+      <section class="services-top" >
+        <h1 id="Services">Our Services</h1>
         <p>
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
           porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -127,17 +133,17 @@
     </div>
     <section class="portfolio-wrapper">
       <section class="portfolio">
-        <h1>Portfolio</h1>
+        <h1 id="Portfolio">Portfolio</h1>
         <p>
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
         </p>
-        <ul>
+        <ul class="portfolio-menu">
           <li><a href="#" class="li-first-child">All</a></li>
           <li><a href="#">Web Design</a></li>
           <li><a href="#">Graphic Design</a></li>
           <li><a href="#">Artwork</a></li>
         </ul>
-        <section class="block-images">
+        <section class="block-images" id="block-images">
           <section class="row-img">
             <img src="assets/Img1.png" alt="img1">
             <img src="assets/Img2.png" alt="img2">
@@ -164,7 +170,7 @@
     </section>
     <section class="content-wrapper">
       <section class="content">
-        <h2>About Us</h2>
+        <h2 id="About">About Us</h2>
         <p>
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
           porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -226,12 +232,14 @@
           <section class="forms">
             <input type="text" class="form_text" name="name" placeholder=" Name (Required)">
             <input type="text" class="form_text forms_margin_top" name="email" placeholder=" Email (Required)">
-            <input type="text" class="form_text forms_margin_top" name="subject" placeholder=" Subject">
+            <input type="text" class="form_text forms_margin_top subject" name="subject" placeholder=" Subject">
             <textarea class="forms_margin_top" name="textarea"
-              placeholder=" Describe your project in detail..."></textarea>
+              placeholder=" Describe your project in detail...">
+            </textarea>
+            <button type="submit" id="formSubmit">Submit</button>
           </section>
           <section class="contact_info">
-            <h4>Contact Information</h4>
+            <h4 id="Contact">Contact Information</h4>
             <p>
               Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit
               amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
@@ -260,7 +268,8 @@
       </section>
     </footer>
   </div>
+</div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
