@@ -15,6 +15,9 @@
   <div class="wrapper">
     <header>
       <section class="header-1">
+        <div class="burger" onclick="switchMenu()">
+          <img src="assets/Burger-menu-icon.png" alt="burger" width="25px" height="20px">
+        </div>
         <h1>SINGOLO<span>*</span></h1>
         <ul id="menu" class="menu">
           <li class="li1 header-li-margin" ><a href="#">HOME</a></li>
@@ -37,7 +40,7 @@
       </section>
       <section id="slider-sec" class="sl slider-second hidden">
         <a onclick="pSlides(-1)"><img src="assets/chev-left.png" class="chev-left" id="chev-left"></a>
-        <img  class="slider-sec" src="assets/Slide-2.svg" alt="slider 2">
+        <img  class="slider-sec" src="assets/Slide2.png" alt="slider 2">
         <a onclick="pSlides(1)"><img src="assets/chev-right.png" class="chev-right" id="chev-right"></a>
       </section>
       <section class="slider-2">
@@ -104,7 +107,7 @@
             </section>
           </section>
         </section>
-        <section class="sb">
+        <section class="sb sb-f">
           <section class="sb-content">
             <div class="margin">
               <img src="assets/heart.png" alt="heart" class="img-heart">
@@ -144,22 +147,15 @@
           <li><a href="#">Artwork</a></li>
         </ul>
         <section class="block-images" id="block-images">
-          <section class="row-img">
             <img src="assets/Img1.png" alt="img1">
             <img src="assets/Img2.png" alt="img2">
             <img src="assets/Img3.png" alt="img3">
-          </section>
-          <section class="row-img">
-            <img src="assets/Img4.png" alt="img4">
+            <img src="assets/Img4.png" alt="img4" >
             <img src="assets/Img5.png" alt="img5">
             <img src="assets/Img6.png" alt="img6">
-          </section>
-          <section class="row-img">
-            <img src="assets/Img7.png" alt="img7">
+            <img src="assets/Img7.png" alt="img7" >
             <img src="assets/Img8.png" alt="img8">
             <img src="assets/Img9.png" alt="img9">
-          </section>
-          <section class="row-img">
             <img src="assets/Img10.png" alt="img10">
             <img src="assets/Img11.png" alt="img11">
             <img src="assets/img12.png" alt="img12">
@@ -178,7 +174,7 @@
         </p>
         <section class="about-us">
           <section class="info">
-            <img src="assets/adam.png" alt="adam">
+            <img src="assets/adam.png" alt="adam" class="info-img">
             <h3>Adam Jensen</h3>
             <p>
               Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
@@ -191,7 +187,7 @@
             </section>
           </section>
           <section class="info info-margin-center">
-            <img src="assets/desmond.png" alt="desmond">
+            <img src="assets/desmond.png" alt="desmond" class="info-img">
             <h3>Desmond Miles</h3>
             <p>
               Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
@@ -204,7 +200,7 @@
             </section>
           </section>
           <section class="info">
-            <img src="assets/scolara.png" alt="scolara">
+            <img src="assets/scolara.png" alt="scolara" class="info-img">
             <h3>Scolara Visari</h3>
             <p>
               Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
@@ -221,6 +217,7 @@
       <div class="content-bottom"></div>
     </section>
     <section class="Get_a_Quote_wrapper">
+      <section class="wr">
       <section class="Get_a_Quote">
         <h2>Get a Quote</h2>
         <p>
@@ -253,7 +250,8 @@
           </section>
         </div>
       </section>
-      <div class="Get_a_Quote_bottom"></div>
+      <div class="Get_a_Quote_bottom"></div> 
+    </section>
     </section>
     <div class="footer-wrapper">
     <footer>
